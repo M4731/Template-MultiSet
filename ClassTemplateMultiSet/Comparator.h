@@ -6,6 +6,7 @@ class Comparator
 public:
 	static bool less(T, T);
 	static bool greater(T, T);
+	//==
 	static bool equals(T x, T y)
 	{
 		if (x == y)
@@ -14,6 +15,8 @@ public:
 	}
 };
 
+
+//>
 template<typename T>
 bool Comparator<T>::less(T x, T y)
 {
@@ -22,6 +25,7 @@ bool Comparator<T>::less(T x, T y)
 	return false;
 }
 
+//<
 template<typename T>
 bool Comparator<T>::greater(T x, T y)
 {
@@ -30,6 +34,7 @@ bool Comparator<T>::greater(T x, T y)
 	return false;
 }
 
+//specializare pe double ==
 template<>
 bool Comparator<double>::equals(double x, double y)
 {

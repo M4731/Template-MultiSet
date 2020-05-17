@@ -2,6 +2,7 @@
 template <typename T>
 class Node
 {
+	//informatie, pointer stanga si pointer dreapta
 	T info;
 	Node* left, * right;
 public:
@@ -16,6 +17,7 @@ public:
 	Node* getRight() const;
 };
 
+//setteri si getteri pentru pointeri si informatie si constructor cu parametru de informatie
 template <typename T>
 Node<T>::Node(T info)
 {
