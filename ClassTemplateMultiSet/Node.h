@@ -9,11 +9,11 @@ public:
 	Node(T);
 
 	void setInfo(T);
-	T getInfo();
+	T getInfo() const;
 	void setLeft(Node*);
-	Node* getLeft();
+	Node* getLeft() const;
 	void setRight(Node*);
-	Node* getRight();
+	Node* getRight() const;
 };
 
 template <typename T>
@@ -31,7 +31,7 @@ void Node<T>::setInfo(T info)
 }
 
 template <typename T>
-T Node<T>::getInfo()
+T Node<T>::getInfo() const
 {
 	return this->info;
 }
@@ -43,7 +43,7 @@ void Node<T>::setLeft(Node<T>* left)
 }
 
 template <typename T>
-Node<T>* Node<T>::getLeft()
+Node<T>* Node<T>::getLeft() const
 {
 	return this->left;
 }
@@ -54,8 +54,8 @@ void Node<T>::setRight(Node<T>* right)
 	this->right = right;
 }
 
-template <typename T>
-Node<T>* Node<T>::getRight()
+template <typename T> 
+Node<T>* Node<T>::getRight() const
 {
 	return this->right;
 }
