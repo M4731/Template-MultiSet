@@ -118,7 +118,7 @@ void MultiSet<T, F>::SRD(ostream& out, Node<T>* N)
 	}
 }
 
-//copy constructor folosind functiile de dilit si copy recusive
+//supraincarcare a operatorului de atribuire folosind functiile de dilit si copy recusive
 template<typename T, typename F>
 MultiSet<T, F>& MultiSet<T, F>::operator=(const MultiSet& N)
 {
